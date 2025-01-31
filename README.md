@@ -61,7 +61,7 @@ Next, I'm going to disable the firewall (you probably wouldn't do this in real l
 
 ![image](https://github.com/user-attachments/assets/f9c9e22e-ee05-4210-9bc5-57ceb1a3abcd)
 
-![image](https://github.com/user-attachments/assets/7ff22726-7d48-4e9d-bbc1-a1e1649a69a2)
+![image](https://github.com/user-attachments/assets/7e0525d4-bf9f-47e9-9e52-a5ce5d7e8e9f)
 
 ![image](https://github.com/user-attachments/assets/be32e342-f0aa-44b7-aac6-459af42c7705)
 
@@ -91,7 +91,16 @@ Once the machine has restarted, I'll use a Remote Desktop connection to connect 
 
 Now that I'm logged in, I will open Powershell and attempt to ping the DC using the ping command and its private IP address. In my case, it'll look like this. (If there is an error and the connection timed out, double-check in Azure to make sure both of the machines are on the same virtual network. If they aren't this is likely causing the error and you'll need to set up the machine again on the same network):
 
-![image](https://github.com/user-attachments/assets/1edb0fb8-d9fd-47c0-9746-7ba094638d3b)
+![image](https://github.com/user-attachments/assets/4421597a-4823-4808-930c-1c341c0241d8)
+
+
+While I'm here I can double check that the DNS server settings are pointing to the DC. I'll run "ipconfig /all" and look for the "DNS Servers" and it should point to our DC if everything is set up properly:
+
+## ![image](https://github.com/user-attachments/assets/37237901-99ab-4a64-ad23-da9c0b3c8a66)
+
+** Active Directory Infrastructure is Now Prepared!
+We've successfully created two VMs (Virtual Machines), one running Windows Server, to act as a Domain Controller. The other VM as a client, running Windows 10. Don't forget: In later projects, I will deploy AD, run a script that will create users in the domain, which I can log into from the client VM, then manage the accounts and update the group policies, all to simulate a real-life environment!**
+
 
 
 
