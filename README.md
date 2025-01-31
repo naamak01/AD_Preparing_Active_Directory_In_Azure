@@ -98,7 +98,7 @@ While I'm here I can double check that the DNS server settings are pointing to t
 
 ## ![image](https://github.com/user-attachments/assets/37237901-99ab-4a64-ad23-da9c0b3c8a66)
 
-** Active Directory Infrastructure is Now Prepared!
+**Active Directory Infrastructure is Now Prepared!
 We've successfully created two VMs (Virtual Machines), one running Windows Server, to act as a Domain Controller. The other VM as a client, running Windows 10. Don't forget: In later projects, I will deploy AD, run a script that will create users in the domain, which I can log into from the client VM, then manage the accounts and update the group policies, all to simulate a real-life environment!**
 
 
